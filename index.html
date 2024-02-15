@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <img src="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c4652c60ba2_Footer%20logo.svg" alt="Logo">
+        <h2>Konversi Suhu</h2>
+    </header>
+    <main>
+        <div id="container">
+            <input type="text" id="celsius" placeholder="Masukkan suhu Celsius">
+            <input type="button" value="Konversi ke Fahrenheit" onclick="celsiusToFahrenheit()">
+            <input type="text" id="fahrenheit" placeholder="Masukkan suhu Fahrenheit">
+            <input type="button" value="Konversi ke Celsius" onclick="fahrenheitToCelsius()">
+        </div>
+        <button onclick="resetAllFields()">Reset</button>
+        <div class="additional-text-container">
+            <p>Rumus untuk mengkonversi suhu dari Celsius ke Fahrenheit</p>
+            <p>Suhu (T) dalam derajat Fahrenheit (°F) sama dengan suhu (T) dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+            <p>T<sub>°F</sub> = (T<sub>°C</sub> x 9/5 + 32)</p>
+            <br>
+            <p>Rumus untuk mengonversi suhu dari Fahrenheit ke Celsius</p>
+            <p>Suhu (T) dalam derajat Celsius (°C) sama dengan suhu (T) dalam derajat Fahrenheit (°F) kurang 32 kali 5/9.</p>
+            <p>T<sub>°C</sub> = 5/9 (T<sub>°F</sub> - 32)</p>
+        </div>
+    <main>
+    <script src="JS/script.js"></script>
+</body>
+</html>
